@@ -15,6 +15,10 @@
   color: #fff;
 }
 
+.interlinking {
+  display: none !important;
+}
+
 /* HEADER MAIN */
 
 #header-main > div{
