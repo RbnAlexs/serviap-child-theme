@@ -15,3 +15,121 @@
 
 }
 
+/* HEADER MAIN */
+
+#header-main > div{
+  max-height: 75px;
+}
+
+#countries-flags a {
+  color: #0091fe !important;
+}
+
+.background-services-02{
+  background-image: linear-gradient(35deg,#d9fef7 10%,#f3fcff 60%);
+}
+
+.login-header a{
+  text-align: center;
+  border-radius: 40px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  padding: 0px 20px !important;
+  margin-left: 15px !important;
+}
+
+.login-header {
+  margin-left: 10px;
+}
+
+#header-main.elementor-sticky--effects .login-header a{
+  border: 1px solid #15357a;
+  padding: 0 25px;
+}
+
+.request-menu{
+  text-align: center;
+  border-radius: 40px;
+  border: 1px solid #FF9900;
+  background: #FF9900;
+}
+
+.request-menu > a{
+  padding: 0px 12px 0 12px !important;
+  color: #FFF !important;
+}
+
+.request-menu:hover{
+  background: #0091fe;
+  border: 1px solid #0091fe;
+}
+
+.request-menu:hover a{
+  color: #FFF !important;
+}
+
+.elementor-16436 .elementor-element.elementor-element-a404692 .elementor-testimonial__content {
+  padding: 20px 20px 20px 20px;
+  border-radius: 20px;
+  background: #f4f4f4;
+}
+
+#header-main.elementor-sticky--effects{ 
+  background-color: rgb(255,255,255,0.90) !important;
+  background-image: none;
+} 
+
+.top-logo{
+  margin-bottom: 0 !important;
+  
+}
+
+.top-logo img, .scroll-logo img{
+  width: auto !important;
+}
+
+.scroll-logo{
+  display: none
+}
+
+#header-main.elementor-sticky--effects .scroll-logo{
+  display: inline-block;
+}
+
+#header-main.elementor-sticky--effects .top-logo{
+  display: none
+}
+
+
+#header-main{ 
+   transition: background-color 1s ease !important; 
+} 
+
+#header-main.elementor-sticky--effects >.elementor-container{ 
+  max-height: 65px; 
+} 
+
+#header-main.elementor-sticky--effects{
+  -webkit-box-shadow: 0 1px 6px rgb(0 0 0 / 20%);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 20%);
+}
+  
+#header-main.elementor-sticky--effects li > a, #header-main.elementor-sticky--effects i { 
+  color: #15357A; 
+} 
+
+#header-main > .elementor-container{ 
+  transition: min-height 1s ease !important; 
+} 
+
+#background-benefits-peo{
+      background-image: linear-gradient(145deg,#037efe 30%,#1cdac6 90%);
+}
+
+.mapplic-zoom-buttons {
+  display: none;
+}
+
+.color-link__paises{
+  font-size: 12px
+}
