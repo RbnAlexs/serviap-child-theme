@@ -2,17 +2,17 @@
   cursor: pointer;
   position: fixed;
   bottom: 125px;
-  right: 30px;
+  right: 25px;
   border-radius: 50%;
   display: none;
   background: #feb03c;
   border-color: #f4f7fc;
-  height: 55px;
-  width: 55px;
-  padding: 5px 14px;
-  font-size: 42px;
+  height: 60px;
+  width: 60px;
+  padding: 0px 15px;
+  font-size: 40px;
+  z-index: 3;
   color: #fff;
-
 }
 
 /* HEADER MAIN */
