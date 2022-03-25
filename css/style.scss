@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,400;1,400;1,500&display=swap');
+$base-color:#c1a077;
+$azul-color:#004b8d;
+$rojo-color: #dd042b;
+$complementario: #A29475;
+$blanco-base: #f4f7fc;
+$font-titulo: 'Abril Fatface', cursive;
+$font-encabezados: 'Roboto Slab', serif;
+$font-texto: 'Roboto', sans-serif;
+$tamanio_texto:  1.25rem;
+$tamanio_texto_inter: 2.05rem;
+$color-texto: #333;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Large tablets and desktops
+$screen-lg-min: 1100px;
+// Mixins para responsive design
+// Mobile devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ 
+
+body{
+    // Solo contenido principal 
+    #masthead{
+        background-color: $azul-color;
+        box-shadow: none;
+    }
+    #content{
+        background: $blanco-base;
+        padding-bottom: 1.75rem !important;
+        padding-top: 0 !important; 
+        .post-thumbail{
+            z-index: 1;
+            position: relative;
+        }
+        .entry-header{
+            .post-thumbnail{
+                z-index: 1;
+                position: relative;
+            }
+            &::before { 
+                content: "";
+                position: absolute;
+                height: 65%;
+                width: 100%;
+                display: block;
+                left: 0;
+                top: 0;
+                background: $azul-color;
+                border-bottom: 2px solid $base-color;
+                z-index: 1;
+            } 
+            .entry-title{
+                font-size: 2.15rem;
+                line-height: 3.15rem;
+                @include lg{
+                    font-size: 2.65rem;
+                    line-height: 3.65rem;
+                    margin: 1rem 0 2rem 0;
+                }
+                width: 100%;
+                font-family: $font-titulo;
+                color: $blanco-base;
+                letter-spacing: 0.35rem;
+                text-align: right;
+                text-transform: uppercase;
+                border: none;
+                position: relative;
+                margin: 1rem 0;
+                &::after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    height: 1px;
+                    background-color: #fff;
+                    width: 150px;
+                    right: 0;
+                    bottom: 0px;
+                }
+            }
+            .feature-image img{
+                display: block;
+                max-width: 100%;
+                position: relative;
+                border-radius: 5px;
+                width: 100%;
+                box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            }
+        }
+    }
+    #main-row{
+        margin-top: 1rem;
+        padding: 0 5%;
+        .menu-pdf-audio{
+            //Modal
+            margin-right: 0 !important;
+            padding-right: 0 !important;
+            .navbar{
+                background: #fff;
+                transition:500ms ease;
+                img{
+                    display: none;
+                }
+                .nav-link{
+                    color: $complementario;
+                    font-size: 1.15em;
+                }
+            .wpml-ls-statics-shortcode_actions{
+                background: transparent;
+                max-width: fit-content;
+                max-width: -moz-max-content;
+                margin-top: 5px;
+                    i{
+                        display: inline-block;
+                        @include md{
+                            padding:  0 5px 0 10px;
+                        }
+                        color: $complementario;
+                        font-size: 1.15em;
+                    }
+                    ul{
+                        display: inline-block;
+                        .wpml-ls-display{
+                            display: none;
+                        }
+                    }
+                }
+                .wpml-ls-legacy-dropdown-click a {
+                    color: $complementario;
+                    border: none;
+                    font-size: 1.15em;
+                    padding: 5px 30px 5px 5px;
+                    span{
+                        vertical-align: inherit;;
+                    }
+                }
+            }
+            .scrolled{
+                background:rgba(211, 210, 196, 0.75);
+                .navbar-brand img{
+                    background: $blanco-base;
+                    border-radius: 100%;
+                    padding: 5px;
+                }
+                img{
+                    display: inline;
+                    max-width: 50px;
+                }
+                .nav-link{
+                    color: $azul-color;
+                    font-weight: 500;
+                }
+                .wpml-ls-statics-shortcode_actions i{
+                    color: $azul-color;
+                }
+                .wpml-ls-legacy-dropdown-click a{
+                    color: $azul-color;
+                    font-weight: 500;
+                    background-color: transparent;
+                }
+            }
+        }      
+    }
+    // Contenido principal
+    #main{
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        background: #fff;
+        padding-bottom: 1em;
+        .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+            font-family: $font-encabezados;
+            color: $azul-color;
+            margin: 1rem 0;
+        }
+        .entry-content{
+            @include lg{
+                padding: 1rem;
+            }    
+            margin: 0;
+            h2{ 
+                font-size: 1.85rem;
+                line-height: 2.85rem;
+                position: relative;
+                &::after{
+                    content: " ";
+                    display: block;
+                    position: absolute;
+                    height: 2px;
+                    background-color: $azul-color;
+                    width: 60px;
+                    left: 0;
+                    bottom: 0px;
+                }
+            }
+            h3 {
+               font-size: 1.65rem;
+               line-height: 2.55rem;
+               color: $color-texto;
+            }
+            h4{
+               font-size: 1.35rem; 
+               line-height: 2.35rem;
+               color: $color-texto;
+            }
+            h5, h6 {
+                font-size: 1.25em;
+                line-height: 2.25rem;
+                color: $color-texto;
+            }
+            p, ul, ol {
+                text-align: justify;
+                font-family: $font-texto;
+                font-size: $tamanio_texto;
+                line-height: $tamanio_texto_inter;
+                color: $color-texto;
+            }
+            p.has-drop-cap:not(:focus):first-letter {
+                float:left;
+                font-size: 4.0em;
+                line-height:.68;
+                font-weight:100;
+                margin:.05em .1em 0 0;
+                text-transform:uppercase;
+                font-style:normal;
+             }
+
+             //Notas al pie
+             .bigfoot-footnote__content p{
+                 font-size: 1rem;
+                 line-height: 1.55rem;
+                 text-align: left;
+             }
+            .bigfoot-footnote__button{
+                background: $complementario;
+            }
+            .bigfoot-footnote {
+                z-index: 99999; 
+            }
+            .footnotes{
+                display: none;
+            }
+            //Acordeon 
+            .card{
+                border-radius: 0;
+                .card-header{
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $azul-color;
+                        transition: 0.5s;
+                        h2{
+                            color: $blanco-base;
+                        }
+                    }
+                }
+            }
+            /* Bloques */
+            //Autor - No. Caso
+            .autores{
+                border: 1px solid #fff;
+                margin: 0 0 1.25rem;
+                span{
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1rem;;
+                    margin: 0.25rem 0 0;
+                    text-align: left;
+                }
+            }
+            // Galería
+            .blocks-gallery-caption, .wp-block-lazyblock-video figcaption, .wp-block-image figcaption {
+                text-align: center;
+                font-weight: 400;
+                color: $color-texto;
+                font-size: 1rem;
+                font-family: $font-texto;
+                font-style: italic;
+                width: 100%;
+                margin: 1rem 0;
+            }
+            // Imagenes
+            .wp-block-image {
+                text-align: center;
+            }
+            // Cita
+            .wp-block-quote {
+                //font-size: 1.35rem;
+                //font-style: italic;
+                //line-height: 2.35rem;
+                //background: #f5f5f5;
+                //border-left: 3px solid $complementario;
+                //border-bottom: 3px solid $complementario;
+                padding: 1rem 0.75em;
+                p{
+                    margin: 0;;
+                }
+            }
+            // Video
+            .wp-block-lazyblock-video, .wp-block-image{
+                text-align: center;
+                margin-bottom: 1em;
+                width: 100%;
+                img{
+                    max-width: 75%;
+                    height: auto;
+                }
+                video{
+                    width: 100%;
+                    @include lg{
+                        max-width: 550px;
+                        height: auto;
+                    }
+                }
+            }
+            // Epigrafe
+            .wp-block-lazyblock-epigrafe{
+                @include lg{
+                    float: right;
+                    width: 100%; 
+                }
+                p{
+                    color: $azul-color;
+                    line-height: 1.95rem;
+                    letter-spacing: .055rem;
+                    text-align: right;
+                    font-size: 1.45rem;
+                    font-style: italic;
+                    font-weight: 500;
+                        @include lg{
+                            width: 90%;
+                            float: right;
+                        }
+                }
+                .epigrafe{
+                    &:before{
+                        content: "\201C";;
+                    }
+                    &:after{
+                        content: "\201D";
+                    }
+                 }
+                 .autor-epigrafe{
+                    font-family: "Roboto",sans-serif;
+                    font-size: 1.25rem;
+                    line-height: 2.15rem;
+                    color: #333;
+                    text-align: right;
+                 }
+            }
+        }
+    }
+    // Sidebar 
+    #secondary{
+        @include md{
+            margin-top: 0;
+        }
+        margin-top: 3em;
+        .sidebar{
+            h3 button{
+                font-size: 1.25rem;
+                color: $azul-color;
+                text-align: left;
+                text-decoration: none;
+                &:hover{
+                    color: $rojo-color;
+                }
+            }
+            ol{
+                margin: 0;
+                padding: 0;
+                @include lg{
+                    overflow-y: scroll;
+                    max-height: 450px;
+                }
+                li{
+                    color: $color-texto;
+                    display: block;
+                    font-size: 15px;
+                    a{
+                        color: $color-texto;
+                        display: block;
+                        font-size: 1rem;
+                        padding: 0.55rem 0;
+                        border-bottom: 1px solid #ececf0;
+                        font-weight: 500;
+                        position: relative;
+                    }
+                }
+            }
+            .myaccordion{
+                .card{
+                    background-color: #fff;
+                    background-clip: border-box;
+                    //border-top: 1px solid $azul-color;
+                    border-right: 0;
+                    border-left: 0;
+                    border-radius: 0;
+                }
+                .card-header{
+                    background: #fff;
+                    border-bottom: none;
+                    cursor: pointer;
+                }
+                .card-body{
+                    padding: .55rem 1.25rem;
+                }
+                .fa-stack{
+                    font-size: 18px;
+                    color: #d3d2c4;
+                    .fa-arrow-down{
+                        color: $complementario;
+                    }
+                }
+                .btn{
+                    width: 100%;
+                    font-weight: bold;
+                    padding: 0;
+                }
+                li+li{
+                    margin-top: 10px;
+                }
+                // Tabla de contenido (TOC) 
+                .lwptoc:first-child{
+                    margin-top: 0;
+                }
+                .lwptoc_i{
+                    padding: 0;
+                }
+                .lwptoc-baseItems .lwptoc_items{
+                    font-size: 0.95rem;
+                }
+                .lwptoc-notInherit .lwptoc_i div a:hover {
+                    color: #d9002d;                
+                }
+                .lwptoc_item, .lwptoc_item:first-child{
+                    margin-top: 0.45rem;
+                }
+                //Light
+                .lwptoc-light .lwptoc_i a{
+                    color: $azul-color;
+                    font-weight: 400;
+                    font-family: $font-texto;
+                }
+                .lwptoc-baseItems .lwptoc_items > .lwptoc_itemWrap > .lwptoc_item > a{
+                    font-weight: 600;
+                }
+                .lwptoc-light .lwptoc_i{
+                    background: #fff;
+                }
+            }    
+            
+            //Modal
+            .modal-header{
+                h5{
+                    color: $azul-color;
+                }
+            }
+            .modal-body{
+                text-align:center;
+                video{
+                    width: 100%;
+                }
+                iframe{
+                    width: 100%;
+                    min-height: 550px;
+                }
+                p{
+                    text-align: left;
+                    margin-bottom: 0;
+                }
+                a{
+                    display: inline-block;
+                    @include lg{
+                        display: none;
+                    }
+                }                
+            }
+        } // Fin Sidebar
+        @include lg{
+           padding-right: 0;
+        }
+    }
+    // Footer
+    #colophon{
+        background: $azul-color !important;
+        color: $blanco-base !important;
+        border-top: 2px $base-color solid;
+    } 
+    .back-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display:none;
+        background: $azul-color;
+        border-color: $blanco-base;
+        &:hover{
+            background: $rojo-color;
+        }
+    }  
+    // Modal
+    .modal-backdrop.show{
+        opacity: 0;
+    }
+    .modal-backdrop {
+        z-index: auto;
+    }
+}
+
+// Animaciones 
+.slideInLeft{
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+}
+@keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+} 
+
+.slideInDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+}
+@keyframes slideInDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+}
