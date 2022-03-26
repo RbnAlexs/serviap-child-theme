@@ -43,7 +43,7 @@ footer a,a:hover, a:active {
 
 
 .mapplic-zoom-buttons {
-  display: inline-block;
+  display: inline-block !important;
   position: absolute;
   top: 85% !important;
   right: 0% !important;
