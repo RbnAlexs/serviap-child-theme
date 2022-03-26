@@ -19,7 +19,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #FE9900;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -29,18 +29,6 @@
   transform-origin: bottom left;
 }
 
-#countries-flags a:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0091fe;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
 
 body .back-to-top {
   cursor: pointer;
