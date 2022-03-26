@@ -1,4 +1,35 @@
-﻿footer a,a:hover, a:active {
+﻿/* Interlink plugin*/
+
+@media (min-width: 720px){
+  .interlink-container {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+}
+
+.interlink-container a{
+  text-decoration: none !important;
+  color:#0091fe;
+}
+
+.interlink-container img{
+  border-radius: 20px;
+}
+
+.interlinking p {
+  font-family: 'Open Sans';
+  font-size: 17px;
+  padding: 0 !important;
+  color: #444751 !important;
+}
+
+.interlink-container h3{
+  font-size: 18px;
+  font-family: 'Open Sans';
+  padding: 0 !important;
+}
+
+footer a,a:hover, a:active {
   color:#e8ecee;
 }
 
@@ -17,7 +48,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   background-color: #FE9900;
   transform-origin: bottom right;
