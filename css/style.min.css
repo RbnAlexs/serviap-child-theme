@@ -58,8 +58,8 @@
 }
 
 
-.login-header a{
-  border: 1px solid #15357a;
+.header-clean .login-header a {
+  border: 1px solid #15357a !important;
 }
 
 footer a,a:hover, a:active {
