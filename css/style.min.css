@@ -57,6 +57,11 @@
   border-radius: 40px;
 }
 
+
+.login-header{
+  border: 1px solid #15357a;
+}
+
 footer a,a:hover, a:active {
   color:#e8ecee;
 }
