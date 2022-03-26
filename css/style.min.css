@@ -7,6 +7,14 @@
   }
 }
 
+.interlink > h3{
+  text-align: center;
+  color: #15357A;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
 .interlink-container a{
   text-decoration: none !important;
   color:#0091fe;
