@@ -2,16 +2,16 @@
   color:#e8ecee;
 }
 
-a{
+#countries-flags a{
   color:#0091fe
 }
-a:hover{
+#countries-flags a:hover{
   color:#FE9900
 }
-main a{
+#countries-flags a{
   position: relative;
 }
-main a:after{
+#countries-flags a:after{
   content: '';
   position: absolute;
   width: 100%;
@@ -24,12 +24,12 @@ main a:after{
   transition: transform 0.25s ease-out;
 }
 
-main a:hover:after{
+#countries-flags a:hover:after{
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-a:after {
+#countries-flags a:after {
   content: '';
   position: absolute;
   width: 100%;
