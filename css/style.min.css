@@ -37,6 +37,13 @@
   padding: 0 !important;
 }
 
+
+/*Submenu*/
+
+.elementor-15145 .elementor-element.elementor-element-2c6403ef .tf-nav-menu .mainnav-mobi .btn-submenu {
+  width: 100% !important;
+}
+
 footer a,a:hover, a:active {
   color:#e8ecee;
 }
