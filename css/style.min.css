@@ -2,6 +2,46 @@
   color:#e8ecee;
 }
 
+a{
+  color:#0091fe
+}
+a:hover{
+  color:#FE9900
+}
+main a{
+  position: relative;
+}
+main a{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+main a:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0091fe;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
 body .back-to-top {
   cursor: pointer;
   position: fixed;
