@@ -11,7 +11,7 @@ a:hover{
 main a{
   position: relative;
 }
-main a{
+/*main a{
   content: '';
   position: absolute;
   width: 100%;
@@ -41,7 +41,7 @@ a:after {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-
+*/
 body .back-to-top {
   cursor: pointer;
   position: fixed;
