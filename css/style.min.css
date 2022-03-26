@@ -54,6 +54,7 @@
 .request-menu .active{
   border: 1px solid #0091fe;
   background: #0091fe;
+  border-radius: 40px;
 }
 
 footer a,a:hover, a:active {
