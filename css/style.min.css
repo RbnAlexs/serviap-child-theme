@@ -1,4 +1,8 @@
-﻿body .back-to-top {
+﻿footer a,a:hover, a:active {
+  color:#e8ecee;
+}
+
+body .back-to-top {
   cursor: pointer;
   position: fixed;
   bottom: 125px;
@@ -13,10 +17,6 @@
   font-size: 40px;
   z-index: 3;
   color: #fff;
-}
-
-.interlinking {
-  display: none !important;
 }
 
 /* HEADER MAIN */
