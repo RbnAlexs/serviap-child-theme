@@ -41,6 +41,9 @@ footer a,a:hover, a:active {
   color:#e8ecee;
 }
 
+.mapplic-icon {
+  fill: #19387c !important;
+}
 
 .mapplic-zoom-buttons {
   display: inline-block !important;
