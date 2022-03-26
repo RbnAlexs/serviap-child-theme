@@ -41,6 +41,14 @@ footer a,a:hover, a:active {
   color:#e8ecee;
 }
 
+
+.mapplic-zoom-buttons {
+  display: inline-block;
+  position: absolute;
+  top: 85% !important;
+  right: 0% !important;
+}
+
 #countries-flags a{
   color:#0091fe
 }
