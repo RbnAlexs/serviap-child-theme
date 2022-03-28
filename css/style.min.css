@@ -1,4 +1,17 @@
-﻿/* Interlink plugin*/
+﻿/* Blog */
+
+#post-blog .post-category{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding-top: 15px;
+}
+#post-blog .post-category a{
+  color: #FE9900;
+}
+
+/* Interlink plugin*/
 
 @media (min-width: 720px){
   .interlink-container {
