@@ -33,13 +33,19 @@
   font-weight: 600;
 }
 
+.interlink-item__content {
+  box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
+  border-radius: 20px !important;
+  margin: 10px;
+}
+
 .interlink-container a{
   text-decoration: none !important;
   color:#0091fe;
 }
 
 .interlink-container img{
-  border-radius: 20px;
+  border-radius: 20px !important;
 }
 
 .interlinking p {
