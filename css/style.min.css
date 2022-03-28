@@ -11,6 +11,11 @@
   color: #FE9900;
 }
 
+#post-blog .featured-post{
+  max-height: 222px;
+  width: auto;
+}
+
 /* Interlink plugin*/
 
 @media (min-width: 720px){
