@@ -16,13 +16,20 @@
   width: auto;
 }
 
-.entry.blog-post {
+.post-categories .entry.blog-post {
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
   border-radius: 20px !important;
   margin: 10px;
   min-height: 375px;
 }
 
+
+.elementor-post {
+  box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
+  border-radius: 20px !important;
+  margin: 10px;
+  min-height: 325px;
+}
 /* Interlink plugin*/
 
 @media (min-width: 720px){
