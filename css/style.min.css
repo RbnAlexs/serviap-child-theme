@@ -1,5 +1,8 @@
 ﻿/* Blog */
-
+.breadcrums a{
+  font-weight: 600;
+  color: #fff;
+}
 #post-blog .post-category{
   white-space: nowrap;
   overflow: hidden;
