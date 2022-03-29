@@ -40,11 +40,14 @@
 }
 
 .interlinking  > h3{
-  text-align: center;
-  color: #15357A;
+  color: var( --e-global-color-primary );
   font-family: "Open Sans", Sans-serif;
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 25px;
+  padding-bottom: 12px;
+  text-align: left;
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: var( --e-global-color-secondary );
 }
 
 .interlink-item__content {
@@ -72,14 +75,11 @@
 }
 
 .interlink-container h3{
-  color: var( --e-global-color-primary );
-  font-family: "Open Sans", Sans-serif;
-  font-size: 25px;
-  padding-bottom: 12px;
-  text-align: left;
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  border-color: var( --e-global-color-secondary );
+  font-family: 'Open Sans';
+  padding: 30px 0px;
+  font-size: 21px;
+  color: #15357a;
+  font-weight: 600;
 }
 
 
