@@ -67,6 +67,10 @@
 
 }
 
+.single-post .interlink-item__content {
+  min-height: 275px !important;
+}
+
 .interlink-container img{
   border-radius: 20px !important;
 }
