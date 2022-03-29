@@ -50,6 +50,7 @@
   border-color: var( --e-global-color-secondary );
   max-width: 1020px;
   margin: 0 auto;
+  font-weight: 600 !important;
 }
 
 .interlink-item__content {
