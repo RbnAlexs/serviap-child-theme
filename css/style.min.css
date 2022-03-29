@@ -68,10 +68,7 @@
 }
 
 .interlinking p {
-  font-family: 'Open Sans';
-  font-size: 17px;
-  padding: 0 !important;
-  color: #444751 !important;
+  display: none;
 }
 
 .interlink-container h3{
