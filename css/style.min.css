@@ -39,6 +39,13 @@
   }
 }
 
+.interlinking  > h3{
+  text-align: center;
+  color: #15357A;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
 
 .interlink-item__content {
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
