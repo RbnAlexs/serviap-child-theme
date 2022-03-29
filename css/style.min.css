@@ -71,6 +71,10 @@
   min-height: 275px !important;
 }
 
+.single-post .interlink-container h3 {
+  font-size: 18px !important;
+}
+
 .interlink-container img{
   border-radius: 20px !important;
 }
