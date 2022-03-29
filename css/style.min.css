@@ -48,6 +48,8 @@
   border-style: solid;
   border-width: 0px 0px 2px 0px;
   border-color: var( --e-global-color-secondary );
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
 .interlink-item__content {
