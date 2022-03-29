@@ -39,13 +39,6 @@
   }
 }
 
-.interlinking  > h3{
-  text-align: center;
-  color: #15357A;
-  font-family: "Open Sans", Sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-}
 
 .interlink-item__content {
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
@@ -72,9 +65,11 @@
 }
 
 .interlink-container h3{
-  font-size: 18px;
   font-family: 'Open Sans';
-  padding: 0 !important;
+  padding: 30px 0px;
+  font-size: 23px;
+  color: #15357a;
+  font-weight: 600;
 }
 
 
