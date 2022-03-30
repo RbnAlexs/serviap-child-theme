@@ -33,6 +33,11 @@
   font-weight: 500;
   color: #fff;
 }
+
+.elementor-post-navigation .post-navigation__arrow-wrapper {
+  color: #feb03c;
+}
+
 #post-blog .post-category{
   white-space: nowrap;
   overflow: hidden;
