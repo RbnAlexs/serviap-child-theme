@@ -59,6 +59,10 @@
   margin: 10px;
   min-height: 325px;
 }
+
+#case-studies .elementor-post__title{
+  margin: 10% 10px 10px;
+}
 /* Interlink plugin*/
 
 @media (min-width: 720px){
