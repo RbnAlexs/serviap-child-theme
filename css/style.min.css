@@ -1,4 +1,8 @@
-﻿/* Archive */
+﻿#header-main .ekit-menu-dropdown-toggle {
+  cursor: context-menu;
+}
+
+/* Archive */
 #archive-post .elementor-post,  #case-studies .elementor-post{
   display: block;
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
@@ -319,6 +323,7 @@ body .back-to-top {
 #header-main.elementor-sticky--effects{
   -webkit-box-shadow: 0 1px 6px rgb(0 0 0 / 20%);
   box-shadow: 0 1px 6px rgb(0 0 0 / 20%);
+  z-index: 999;
 }
   
 #header-main.elementor-sticky--effects li > a, #header-main.elementor-sticky--effects i { 
