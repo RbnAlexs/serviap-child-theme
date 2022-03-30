@@ -26,6 +26,7 @@
 #post-blog .featured-post img{
   border-radius: 15px 15px 0 0;
   max-width: fit-content;
+  height: 250px;
 }
 
 .tf-posts-wrap .tf-posts .blog-post .title {
