@@ -18,6 +18,11 @@
   height: 250px;
   width: auto;
 }
+
+#case-studies .elementor-post__thumbnail {
+  height: 250px;
+}
+
 /* Blog */
 .breadcrums a{
   font-weight: 500;
