@@ -1,5 +1,5 @@
 ﻿/* Archive */
-#archive-post .elementor-post {
+#archive-post .elementor-post,  #case-studies .elementor-post{
   display: block;
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
   border-radius: 20px !important;
@@ -7,13 +7,13 @@
   min-height: 300px;
 }
 
-#archive-post .elementor-post__text {
+#archive-post .elementor-post__text, #case-studies .elementor-post__text{
   width: 100%;
   padding: 5px 10px;
   margin-bottom: 20px;
 }
 
-#archive-post .elementor-post__thumbnail img{
+#archive-post .elementor-post__thumbnail img, #case-studies .elementor-post__thumbnail img{
   max-width: fit-content;
   height: 250px;
   width: auto;
@@ -59,10 +59,12 @@
   margin: 10px;
   min-height: 325px;
 }
-
+/*
 #case-studies .elementor-post__title{
   margin: 10% 10px 10px;
 }
+*/
+
 /* Interlink plugin*/
 
 @media (min-width: 720px){
