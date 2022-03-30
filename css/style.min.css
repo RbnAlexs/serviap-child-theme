@@ -1,4 +1,13 @@
-﻿/* Blog */
+﻿/* Archive */
+#archive-post .elementor-post {
+  display: block;
+  padding: 10px 20px 20px 20px;
+  box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
+  border-radius: 20px !important;
+  margin: 10px;
+  min-height: 300px;
+}
+/* Blog */
 .breadcrums a{
   font-weight: 500;
   color: #fff;
@@ -14,9 +23,14 @@
   color: #15357A;
 }
 
-#post-blog .featured-post{
-  height: 222px;
-  width: auto;
+#post-blog .featured-post img{
+  border-radius: 15px 15px 0 0;
+  max-width: fit-content;
+}
+
+.tf-posts-wrap .tf-posts .blog-post .title {
+  font-size: 23px;
+  margin: 10% 10px 10px;
 }
 
 .entry.blog-post {
@@ -61,7 +75,7 @@
   border-radius: 20px !important;
   margin: 10px;
   min-height: 315px;
-  padding: 10px 20px 20px 20px !important;
+  padding: 0;
 }
 
 .interlink-container a{
@@ -79,7 +93,7 @@
 }
 
 .interlink-container img{
-  border-radius: 20px !important;
+  border-radius: 20px 20px 0 0!important;
 }
 
 .interlinking p {
@@ -88,7 +102,7 @@
 
 .interlink-container h3{
   font-family: 'Open Sans';
-  padding: 15% 0px 0px;
+  padding: 10% 10px 0px;
   font-size: 21px;
   color: #15357a;
   font-weight: 600;
