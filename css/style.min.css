@@ -35,7 +35,7 @@
 }
 
 .elementor-post-navigation .post-navigation__arrow-wrapper {
-  color: #feb03c;
+  color: #feb03c !important;
 }
 
 #post-blog .post-category{
