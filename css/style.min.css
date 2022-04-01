@@ -1,4 +1,12 @@
-﻿#header-main .ekit-menu-dropdown-toggle {
+﻿
+/* Remove "x" from search bar -- Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+#header-main .ekit-menu-dropdown-toggle {
   cursor: context-menu;
 }
 
@@ -14,6 +22,8 @@
 #archive-post .elementor-post__thumbnail__link{
   margin-bottom: 0 !important;
 }
+
+
 
 #archive-post .elementor-post__text, #case-studies .elementor-post__text{
   width: 100%;
