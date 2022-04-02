@@ -3,6 +3,15 @@
  * GENERAL *
  *----------------------------------------*/ 
 
+function page_tagcat_settings() {
+    // Add tag metabox to page
+    // register_taxonomy_for_object_type('post_tag', 'page');
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');
+}
+// Add to the admin_init hook of your theme functions.php file
+add_action( 'init', 'page_tagcat_settings' );
+
 // Crear child theme y definir CSS dir 
 function serviap_child_enqueue_styles() {
 	$parent_style = 'hello-elementor';
