@@ -122,8 +122,9 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
   border-radius: 20px !important;
   margin: 10px;
-  min-height: 315px;
+  min-height: 345px;
   padding: 0;
+  overflow: hidden;
 }
 
 .interlink-container a{
@@ -141,8 +142,12 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 }
 
 .interlink-container img{
-  border-radius: 20px 20px 0 0!important;
   border-bottom: 1px solid #2c70f026;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  max-width: fit-content;
+  width: auto;
 }
 
 .interlinking p {
@@ -151,7 +156,7 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 
 .interlink-container h3{
   font-family: 'Open Sans';
-  padding: 10% 10px 0px;
+  padding: 10% 10px 10px;
   font-size: 21px;
   color: #15357a;
   font-weight: 600;
