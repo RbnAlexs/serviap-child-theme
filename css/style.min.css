@@ -37,13 +37,13 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 
 #archive-post .elementor-post__thumbnail img, #case-studies .elementor-post__thumbnail img{
   max-width: fit-content;
-  height: 210px;
+  height: 200px;
   width: auto;
   border-bottom: 1px solid #2c70f026;
 }
 
 #case-studies .elementor-post__thumbnail {
-  height: 210px;
+  height: 200px;
 }
 
 /* Blog */
