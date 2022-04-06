@@ -20,7 +20,7 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
   box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
   border-radius: 20px !important;
   margin: 10px;
-  min-height: 375px;
+  min-height: 335px;
 }
 
 #archive-post .elementor-post__thumbnail__link{
