@@ -2,20 +2,13 @@
   min-width: auto !important;
 }
 
-#countries-flags a{
-  font-family: "Open Sans", Sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: none;
-    line-height: 14px;
-    fill: var( --e-global-color-accent );
-    color: var( --e-global-color-accent );
-    background-color: #FE990000;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #FE9900;
-    border-radius: 40px 40px 40px 40px;
-    padding: 15px 15px 15px 15px;
+.countries-we-covers a{
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FE9900;
+  border-radius: 40px 40px 40px 40px;
+  padding: 15px 15px 15px 15px;
+  display: block;
 }
 
 /* Remove "x" from search bar -- Chrome */
