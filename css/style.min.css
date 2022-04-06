@@ -43,7 +43,7 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 }
 
 #case-studies .elementor-post__thumbnail {
-  height: 250px;
+  height: 210px;
 }
 
 /* Blog */
