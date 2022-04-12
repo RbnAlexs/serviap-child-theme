@@ -1,4 +1,8 @@
-﻿/* Country Facts */
+﻿#content-post #ez-toc-container{
+  display: none;
+}
+
+/* Country Facts */
 
 .quick-facts p{
   padding: 15px 0;
@@ -200,6 +204,7 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 .single-post .interlink-container h3 {
   font-size: 18px !important;
 }
+
 
 .interlink-container img{
   border-bottom: 1px solid #2c70f026;
