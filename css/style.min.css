@@ -3,6 +3,10 @@
   height: 115% !important;
 }
 
+.ctshowcase-hexagonal-layout {
+  padding: 0 !important;
+}
+
 
 /* Interiores de countries we cover */
 .page .post-tags{
