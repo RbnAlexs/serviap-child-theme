@@ -1,5 +1,12 @@
 ﻿/* TOC single page  */
 
+.ez-toc-title{
+  font-family: 'Open Sans';
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.3em;
+  padding-bottom: 20px;
+}
 
 #content-post #ez-toc-container{
   display: none;
