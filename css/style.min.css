@@ -1,5 +1,13 @@
-﻿#content-post #ez-toc-container{
+﻿/* TOC single page  */
+
+
+#content-post #ez-toc-container{
   display: none;
+}
+
+#ez-toc-container a.active {
+  color: #feb03c !important;
+  font-weight: 500;
 }
 
 /* Country Facts */
