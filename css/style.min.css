@@ -1,4 +1,16 @@
-﻿#menu-languages .elementskit-submenu-panel{
+﻿/* Leadership */
+.ctshowcase-layout .ctshowcase-hex .ctshowcase-hex-profile-pic {
+  height: 115% !important;
+}
+
+
+/* Interiores de countries we cover */
+.page .post-tags{
+  display: none !important;
+}
+
+
+#menu-languages .elementskit-submenu-panel{
   min-width: auto !important;
 }
 
