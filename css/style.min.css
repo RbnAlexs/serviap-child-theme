@@ -1,4 +1,38 @@
-﻿/* Leadership */
+﻿/* Country Facts */
+
+.quick-facts p{
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  display: inline-block;
+  vertical-align:top
+}
+
+.quick-facts p:last-child, .quick-facts p:nth-last-child(2){
+  border-bottom: none;
+}
+
+.quick-facts i{
+  color: #0091fe;
+  font-size: 20px;
+  position: relative;
+  bottom: -3px;
+}
+
+
+a.elementor-toc__list-item-text.elementor-toc__top-level.elementor-item-active {
+  color: #feb03c;
+  font-weight: 600;
+}
+
+.quick-facts strong, 
+.quick-facts b{
+  color: #feb03c;
+}
+
+
+
+/* Leadership */
 .ctshowcase-layout .ctshowcase-hex .ctshowcase-hex-profile-pic {
   height: 115% !important;
 }
@@ -379,8 +413,8 @@ body .back-to-top {
   transition: min-height 1s ease !important; 
 } 
 
-#background-benefits-peo{
-      background-image: linear-gradient(145deg,#037efe 30%,#1cdac6 90%);
+#background-benefits-peo {
+  background-image: linear-gradient(10deg,#037efe 30%,rgb(3 126 254 / 85%) 90%);
 }
 
 .mapplic-zoom-buttons {
