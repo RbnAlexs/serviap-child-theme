@@ -135,6 +135,10 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
   color: #fff;
 }
 
+ul, ul li {
+  margin-left: 20px;
+}
+
 #post-blog .post-category{
   white-space: nowrap;
   overflow: hidden;
