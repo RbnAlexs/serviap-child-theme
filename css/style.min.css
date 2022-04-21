@@ -139,6 +139,10 @@ ul, ul li {
   margin-left: 20px;
 }
 
+ul li {
+  margin: 10px 0px;
+}
+
 #post-blog .post-category{
   white-space: nowrap;
   overflow: hidden;
