@@ -308,9 +308,11 @@ footer a,a:hover, a:active {
 #countries-flags a{
   color:#0091fe
 }
-#countries-flags a:hover{
+#countries-flags a:hover, #countries-flags a.current{
   color:#FE9900
 }
+
+
 #countries-flags a{
   position: relative;
 }
