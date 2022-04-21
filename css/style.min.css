@@ -143,6 +143,10 @@ ul li {
   margin: 10px 0px;
 }
 
+.blog-post-facts h2{
+  margin-top: 35px;
+}
+
 #post-blog .post-category{
   white-space: nowrap;
   overflow: hidden;
