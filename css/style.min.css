@@ -316,7 +316,7 @@ footer a,a:hover, a:active {
 #countries-flags a{
   position: relative;
 }
-#countries-flags a:after{
+#countries-flags a:after, #countries-flags a.current:after{
   content: '';
   position: absolute;
   width: 100%;
