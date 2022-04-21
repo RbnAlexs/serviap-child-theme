@@ -135,15 +135,15 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
   color: #fff;
 }
 
-ul, ul li {
+ul, ul li, ol, ol li {
   margin-left: 20px;
 }
 
-ul{
+ul, ol{
   margin-bottom: 10px;
 }
 
-ul li {
+ul li, ol li {
   margin: 10px 0px;
 }
 
