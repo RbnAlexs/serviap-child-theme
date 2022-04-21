@@ -139,6 +139,10 @@ ul, ul li {
   margin-left: 20px;
 }
 
+ul{
+  margin-bottom: 10px;
+}
+
 ul li {
   margin: 10px 0px;
 }
