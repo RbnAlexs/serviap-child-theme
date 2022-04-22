@@ -392,6 +392,12 @@ body .back-to-top {
   background: #FF9900;
 }
 
+@media(max-width: 720px){
+  .request-menu{
+    display: none;
+  }
+}
+
 .request-menu > a{
   padding: 0px 12px 0 12px !important;
   color: #FFF !important;
