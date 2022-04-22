@@ -329,9 +329,12 @@ footer a,a:hover, a:active {
   transition: transform 0.25s ease-out;
 }
 
-#countries-flags a:hover:after{
-  transform: scaleX(1);
-  transform-origin: bottom left;
+
+@media(min-width: 1020px){
+  #table-contents-facts{
+    position: sticky;
+    top: 115px;
+  }
 }
 
 
