@@ -24,9 +24,39 @@ a.rsswidget {
   margin-bottom: 20px;
 }
 
+/*
 .elementor-widget-wp-widget-rss li::marker{
   color: #66cea9;
 }
+*/
+
+.elementor-widget-wp-widget-rss li::before{
+  content: "";
+  border-color: transparent #66cea9;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.rss-widget-icon{
+  display: none;
+}
+
+ content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
 
 /* TOC single page  */
 
