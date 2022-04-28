@@ -2,6 +2,32 @@
   margin: 0 !important;
 }
 
+/* RSS Country facts*/
+
+a.rsswidget.rss-widget-title{
+  color: #E8ECEE;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+a.rsswidget {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 25px;
+}
+
+.elementor-widget-wp-widget-rss h5{
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.elementor-widget-wp-widget-rss li::marker{
+  color: #66cea9;
+}
+
 /* TOC single page  */
 
 .ez-toc-title{
