@@ -21,7 +21,7 @@ a.rsswidget {
 
 .elementor-widget-wp-widget-rss h5{
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 
@@ -29,6 +29,9 @@ a.rsswidget {
   color: transparent;
 }
 
+.elementor-widget-wp-widget-rss li{
+  margin: 0 !important;
+}
 
 .elementor-widget-wp-widget-rss li::before{
   content: "";
