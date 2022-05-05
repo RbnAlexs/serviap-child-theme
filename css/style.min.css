@@ -4,6 +4,10 @@
 
 /* RSS Country facts*/
 
+.load-more-align-center .elementor-button {
+  border-radius: 20px;
+}
+
 a.rsswidget.rss-widget-title{
   color: #E8ECEE;
   font-family: "Open Sans", Sans-serif;
