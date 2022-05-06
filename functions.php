@@ -1,6 +1,6 @@
 <?php
 
-/* Current tags from category (shortcode) */
+/* Current tags from category (shortcode) 
 
 function get_tags_in_use($category_ID, $type = 'name'){
     // Set up the query for our posts
@@ -90,11 +90,12 @@ function tag_cloud_by_category($atts){
     return ob_get_clean();
 }
 
-add_shortcode ('etiquetas-cat','tag_cloud_by_category');
+add_shortcode ('etiquetas-cat','tag_cloud_by_category');*/
 
 /**
  * Featured image to RSS Feed.
  */
+
 function featuredtoRSS($content) {
     global $post;
     if ( has_post_thumbnail( $post->ID ) ){
