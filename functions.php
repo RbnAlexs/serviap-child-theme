@@ -1,5 +1,12 @@
 <?php
 
+
+add_action( 'wp_mail_failed', 'onMailError', 10, 1 );
+function onMailError( $wp_error ) {
+    echo "<pre>";
+    print_r($wp_error);
+    echo "</pre>";
+}    
 /* Current tags from category (shortcode) */
 
 function tag_cloud_by_category($atts){
