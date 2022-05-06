@@ -1,5 +1,42 @@
 <?php
 
+/* Current tags from category (shortcode) */
+
+function tag_cloud_by_category($atts){
+    $category_ID = shorcode_atts(['category' => ''], $atts)
+    // Get our tag array
+    $tags = get_tags_in_use($category_ID['category'], 'id');
+
+    // Start our output variable
+    echo '<div class="tag-cloud">';
+
+    // Cycle through each tag and set it up
+    foreach ($tags as $tag):
+        // Get our count
+        $term = get_term_by('id', $tag, 'post_tag');
+        $count = $term->count;
+
+        // Get tag name
+        $tag_info = get_tag($tag);
+        $tag_name = $tag_info->name;
+
+        // Get tag link
+        $tag_link = get_tag_link($tag);
+
+        // Set up our font size based on count
+        $size = 8 + $count;
+
+        echo '<span style="font-size:'.$size.'px;">';
+        echo '<a href="'.$tag_link.'">'.$tag_name.'</a>';
+        echo ' </span>';
+
+    endforeach;
+
+    echo '</div>';
+}
+
+add_shortcode ('etiquetas-cat','tag_cloud_by_category');
+
 /**
  * Featured image to RSS Feed.
  */
