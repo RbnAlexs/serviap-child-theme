@@ -508,7 +508,7 @@ body .back-to-top {
 }
 
 @media(max-width: 720px){
-  .request-menu{
+  .request-menu-mobile{
     display: none;
   }
 }
