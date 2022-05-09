@@ -4,6 +4,43 @@
 
 /* RSS Country facts*/
 
+
+
+.wp_rss_retriever li {
+  list-style: none;
+  box-shadow: rgb(0 35 75 / 10%) 0px 2px 25px;
+  border-radius: 20px !important;
+  margin: 10px;
+  min-height: 335px;
+  width: 20%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+a.wp_rss_retriever_image {
+  margin: 0;
+  width: 100% !important;
+  display: inline-block;
+}
+
+a.wp_rss_retriever_title {
+  color: var( --e-global-color-primary );
+  font-family: "Open Sans", Sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  margin: 7px 10px;
+  display: inline-block;
+}
+
+.wp_rss_retriever_image img.portrait {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: fit-content;
+  height: 200px;
+  width: auto;
+  border-bottom: 1px solid #2c70f026;
+}
+
 .load-more-align-center .elementor-button {
   border-radius: 20px;
 }
