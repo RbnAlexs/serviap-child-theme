@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-.profile-card:hover{
+.ekit-wid-con .profile-square-v .profile-card:hover{
     border-radius: 20px !important;
     border: 1px solid #2bc5f3;
     box-shadow: none;
