@@ -24,6 +24,10 @@
   margin-bottom: 0;
 }
 
+.ekit-wid-con .ekit-team-modal-img>img{
+  box-shadow: none !important;
+}
+
 /* RSS Country facts*/
 
 .wp_rss_retriever li {
