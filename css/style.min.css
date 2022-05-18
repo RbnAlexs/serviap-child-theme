@@ -28,6 +28,12 @@
   box-shadow: none !important;
 }
 
+.ekit-wid-con .ekit-promo-popup>.mfp-container>.mfp-content {
+  max-width: 920px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 /* RSS Country facts*/
 
 .wp_rss_retriever li {
