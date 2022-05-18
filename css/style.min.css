@@ -20,6 +20,10 @@
     box-shadow: none;
 }
 
+.ekit-wid-con .profile-square-v .profile-card .profile-header {
+  margin-bottom: 0;
+}
+
 /* RSS Country facts*/
 
 .wp_rss_retriever li {
