@@ -9,6 +9,11 @@
   height: auto !important;
 }
 
+.ekit-wid-con .profile-square-v .profile-card {
+  padding: 20px 20px 40px;
+  z-index: 1;
+}
+
 /* RSS Country facts*/
 
 .wp_rss_retriever li {
