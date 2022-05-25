@@ -18,9 +18,9 @@
 }
 
 @media (min-width: 1025px){
-  .ekit-nav-dropdown-hover .elementskit-dropdown-has:hover>.elementskit-dropdown {
+  .popular-menu .elementskit-dropdown {
     min-width: 270px !important;
-  }
+}
 
   li.popular-tag>a {
     display: inline-block !important;
