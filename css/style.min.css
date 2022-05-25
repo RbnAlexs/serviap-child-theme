@@ -2,6 +2,30 @@
   margin: 0 !important;
 }
 
+/* Menu with "Popular" tag */
+
+@media (min-width: 1025px){
+  .ekit-nav-dropdown-hover .elementskit-dropdown-has:hover>.elementskit-dropdown {
+    min-width: 275px !important;
+  }
+
+  li#menu-item-15686>a {
+    display: inline-block;
+  }
+  
+  li#menu-item-15686:after {
+    content: "Popular";
+    display: inline-block;
+    background: #f90;
+    padding: 2px 9px;
+    font-size: 0.75em;
+    border-radius: 10px;
+    color: #fff;
+  }
+}
+
+
+
 /* Leadership */
 
 .ekit-wid-con .profile-header>img{
