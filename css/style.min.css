@@ -6,7 +6,7 @@
 
 @media (min-width: 1025px){
   .ekit-nav-dropdown-hover .elementskit-dropdown-has:hover>.elementskit-dropdown {
-    min-width: 285px !important;
+    min-width: 270px !important;
   }
 
   li.popular-tag>a {
@@ -18,7 +18,7 @@
     display: inline-block;
     background: #f90;
     padding: 2px 9px;
-    font-size: 0.75em;
+    font-size: 0.65em;
     border-radius: 10px;
     color: #fff;
   }
