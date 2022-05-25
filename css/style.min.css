@@ -6,14 +6,14 @@
 
 @media (min-width: 1025px){
   .ekit-nav-dropdown-hover .elementskit-dropdown-has:hover>.elementskit-dropdown {
-    min-width: 275px !important;
+    min-width: 285px !important;
   }
 
-  li#menu-item-15686>a {
-    display: inline-block;
+  li.popular-tag>a {
+    display: inline-block !important;
   }
-  
-  li#menu-item-15686:after {
+
+  li.popular-tag:after {
     content: "Popular";
     display: inline-block;
     background: #f90;
