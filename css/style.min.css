@@ -15,17 +15,6 @@
     border-radius: 10px;
     color: #fff;
   }
-
-  li.popular-tag:after {
-    content: "Popular";
-    display: inline-block;
-    background: #f90;
-    padding: 2px 9px;
-    font-size: 0.65em;
-    border-radius: 10px;
-    color: #fff;
-  }
-
 }
 
 @media (min-width: 1025px){
@@ -35,6 +24,16 @@
 
   li.popular-tag>a {
     display: inline-block !important;
+  }
+
+  li.popular-tag:after {
+    content: "Popular";
+    display: inline-block;
+    background: #f90;
+    padding: 2px 9px;
+    font-size: 0.65em;
+    border-radius: 10px;
+    color: #fff;
   }
 }
 
