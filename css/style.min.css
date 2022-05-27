@@ -86,12 +86,14 @@
   .ekit-wid-con .elementskit-team-popup .modal-body {
     max-height: 550px;
     overflow: scroll !important;
+  }
 }
 
 @media (max-width: 1020px){
   .ekit-wid-con .elementskit-team-popup .modal-body {
     max-height: auto;
     overflow:visible;
+  }
 }
 
 
