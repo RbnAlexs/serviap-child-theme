@@ -85,7 +85,7 @@
 @media (max-width: 480px){
   .ekit-wid-con .elementskit-team-popup .modal-body {
     max-height: 550px;
-    overflow: scroll;
+    overflow: scroll !important;
 }
 
 @media (max-width: 1020px){
