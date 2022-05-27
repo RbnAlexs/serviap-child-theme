@@ -74,11 +74,26 @@
   overflow: hidden;
 }
 
-.ekit-wid-con .ekit-team-modal-img>img {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+@media(min-width: 720px){
+  .ekit-wid-con .ekit-team-modal-img>img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
+
+@media (max-width: 480px){
+  .ekit-wid-con .elementskit-team-popup .modal-body {
+    max-height: 550px;
+    overflow: scroll;
+}
+
+@media (max-width: 1020px){
+  .ekit-wid-con .elementskit-team-popup .modal-body {
+    max-height: auto;
+    overflow:visible;
+}
+
 
 /* RSS Country facts*/
 
