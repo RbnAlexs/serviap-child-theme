@@ -26,7 +26,7 @@ class FLHM_HTML_Compression
         $compressed = strlen($compressed);
         $savings = ($raw - $compressed) / $raw * 100;
         $savings = round($savings, 2);
-        return '<!--HTML compressed, size saved ' . $savings . '%. From ' . $raw . ' bytes, now ' . $compressed . ' bytes-->';
+        return '<!--Copyright © 2022 Serviap Global. All Rights Reserved.-->';
     }
     protected function flhm_minifyHTML($html)
     {
