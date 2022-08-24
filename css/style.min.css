@@ -10,9 +10,10 @@
     border: none;
     transition: all 0.2s ease-in-out;
     text-align: center;
+    margin: 15px !important;
 }
 
-.categories-blog-list a:hover{
+.categories-blog-list li:hover{
     background: #f90;
 }
 
