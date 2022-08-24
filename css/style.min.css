@@ -4,12 +4,16 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 140px;
-    padding: 18px;
+    padding: 18px !important;
     background-color: #068ffa;
     border-radius: 40px;
     border: none;
     transition: all 0.2s ease-in-out;
     text-align: center;
+}
+
+.categories-blog-list a:hover{
+    background: #f90;
 }
 
 .categories-blog-list a{
