@@ -24,3 +24,7 @@
 .elementor-15145 .elementor-element.elementor-element-1087f08b .elementskit-navbar-nav .elementskit-submenu-panel {
     min-width: 300px !important;
 }
+
+.elementor-widget-elementskit-header-search{
+    margin-bottom: 0 !important;
+}
