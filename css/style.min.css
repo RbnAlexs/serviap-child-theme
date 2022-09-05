@@ -20,3 +20,7 @@
 .categories-blog-list a{
     color: #fff;
 }
+
+.elementor-15145 .elementor-element.elementor-element-1087f08b .elementskit-navbar-nav .elementskit-submenu-panel {
+    min-width: 300px !important;
+}
