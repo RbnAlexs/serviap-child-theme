@@ -28,3 +28,7 @@
 .elementor-widget-elementskit-header-search{
     margin-bottom: 0 !important;
 }
+
+#ekit-megamenu-main-menu ul.elementskit-submenu-panel{
+    min-width: 310px !important;
+}
