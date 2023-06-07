@@ -20,7 +20,7 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 
 <script src="//code.tidio.co/gyj5ocbc2unznxoayl8l8vozfkbmx9us.js" async></script>
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
-	<span><i class="fa fa-angle-up"></i></span>
+		<span><i class="fa fa-angle-up"></i></span>
 </a>
 
 </body>

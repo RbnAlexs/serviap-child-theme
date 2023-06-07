@@ -1,7 +1,7 @@
 <?php
 
 /** Minify HTML */
-
+/*
 class FLHM_HTML_Compression
 {
     protected $flhm_compress_css = true;
@@ -125,7 +125,9 @@ function flhm_wp_html_compression_start()
 }
 add_action('get_header', 'flhm_wp_html_compression_start');
 
-/* Current tags from category (shortcode) 
+/* Current tags from category (shortcode) */
+
+/*
 
 function get_tags_in_use($category_ID, $type = 'name'){
     // Set up the query for our posts
