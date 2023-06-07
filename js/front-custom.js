@@ -37,3 +37,13 @@ jQuery(document).ready(function($){
 
 });
 
+// Obtén todos los elementos de la tabla de contenido con la clase "subindice"
+var subindices = document.getElementsByClassName("ez-toc-heading-level-3");
+
+// Recorre cada elemento y elimina la numeración
+for (var i = 0; i < subindices.length; i++) {
+  var contenido = subindices[i].textContent; // Obtén el contenido del subíndice
+  contenido = contenido.replace(/^\d+\)/, ""); // Elimina el número y paréntesis al principio
+  
+  subindices[i].textContent = contenido; // Establece el nuevo contenido sin numeración
+}
