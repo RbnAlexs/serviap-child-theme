@@ -34,8 +34,14 @@ jQuery(document).ready(function($){
         }
     });
 
-
-
+	var subindices = document.getElementsByClassName("ez-toc-heading-level-3");
+	console.log(subindices.length);
+	for (var i = 0; i < subindices.length; i++) {
+	var enlace = subindices[i].getElementsByTagName("a")[0];
+	var contenido = enlace.innerHTML;
+	contenido = contenido.replace(/^\d+\)\s*/, "");
+	enlace.innerHTML = contenido;
+}
 
 });
 
