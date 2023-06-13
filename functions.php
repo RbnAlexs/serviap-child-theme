@@ -417,4 +417,11 @@ add_filter( 'gettext', 'vpsb_remove_lostpassword_text' );
 
 //Desactivar actualizaciones automaticas de plugins
 add_filter( 'auto_update_plugin', '__return_false' );
+
+// CSS al dashboard del usuario
+function dashboard_style() {
+    wp_enqueue_style('my-dashboard-theme',get_stylesheet_directory_uri().'/css/dashboard-style.css');
+}
+add_action('admin_enqueue_scripts', 'dashboard_style');
+
 ?>
