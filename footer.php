@@ -23,9 +23,10 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 		<span><i class="fa fa-angle-up"></i></span>
 </a>
 
+<script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
+
 <?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 if ($my_current_lang == 'en'): ?>
-    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
 	<script>
 	var cpTenantDomain = "serviapgroup";
 	var cpRouterName = "inbound-router";
@@ -47,7 +48,6 @@ if ($my_current_lang == 'en'): ?>
 	</script>
 <?php endif; 
 if ($my_current_lang == 'es'): ?>
-    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
 	<script>
 	var cpTenantDomain = "serviapgroup";
 	var cpRouterName = "inbound-router";
