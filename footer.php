@@ -23,11 +23,12 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 		<span><i class="fa fa-angle-up"></i></span>
 </a>
 
+
+
 	<script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
 	<script>
 	var cpTenantDomain = "serviapgroup";
 	var cpRouterName = "inbound-router";
-
 <?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 if ($my_current_lang == 'en'): ?>
 	var cpHubspotFormID = ["68ba3466-4abb-49d4-9700-e63e64f1ce12"];
@@ -41,7 +42,6 @@ if ($my_current_lang == 'pt-br'): ?>
 if ($my_current_lang == 'de'): ?>
 	var cpHubspotFormID = ["40eb4e14-8676-43b8-acf1-6e4dc22db2d1"];
 <?php endif; ?>
-
 	var lead = {};
 	window.addEventListener("message", function (event) {
 	if (event.data.type === "hsFormCallback") {
