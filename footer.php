@@ -67,6 +67,27 @@ if ($my_current_lang == 'es'): ?>
 	}
 	});
 	</script>
+<?php endif; 
+if ($my_current_lang == 'pt-br'): ?>
+	<script>
+	var cpTenantDomain = "serviapgroup";
+	var cpRouterName = "inbound-router";
+	var cpHubspotFormID = ["b9402139-cd18-483b-aea1-32095d00476f"];
+	var lead = {};
+	window.addEventListener("message", function (event) {
+	if (event.data.type === "hsFormCallback") {
+		if (event.data.eventName === "onFormSubmit") {
+			for (var key in event.data.data) {
+				if (Array.isArray(event.data.data[key].value)) {event.data.data[key].value = event.data.data[key].value.toString().replaceAll(",",";");}
+				lead[event.data.data[key].name] = event.data.data[key].value;
+			}
+			if(Object.keys(lead).length <= 1){lead = event.data.data;}
+		} else if (event.data.eventName === "onFormSubmitted") {
+			ChiliPiper.submit(cpTenantDomain, cpRouterName, {map:true,lead:lead});
+		}
+	}
+	});
+	</script>
 <?php endif; ?>
 
 </body>
