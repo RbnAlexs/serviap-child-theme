@@ -50,7 +50,7 @@ if ($my_current_lang == 'es'): ?>
     <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
 	<script>
 	var cpTenantDomain = "serviapgroup";
-	var cpRouterName = "inbound_router";
+	var cpRouterName = "inbound-router";
 	var cpHubspotFormID = ["b684bcb7-2f56-49d1-9054-a6b5077d7672"];
 	var lead = {};
 	window.addEventListener("message", function (event) {
