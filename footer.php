@@ -25,10 +25,48 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 
 <?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 if ($my_current_lang == 'en'): ?>
-    THIS IS A TEXT STRING TO OUR ENGLISH VERSION. :)
+    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
+	<script>
+	var cpTenantDomain = "serviapgroup";
+	var cpRouterName = "inbound-router";
+	var cpHubspotFormID = ["68ba3466-4abb-49d4-9700-e63e64f1ce12"];
+	var lead = {};
+	window.addEventListener("message", function (event) {
+	if (event.data.type === "hsFormCallback") {
+		if (event.data.eventName === "onFormSubmit") {
+			for (var key in event.data.data) {
+				if (Array.isArray(event.data.data[key].value)) {event.data.data[key].value = event.data.data[key].value.toString().replaceAll(",",";");}
+				lead[event.data.data[key].name] = event.data.data[key].value;
+			}
+			if(Object.keys(lead).length <= 1){lead = event.data.data;}
+		} else if (event.data.eventName === "onFormSubmitted") {
+			ChiliPiper.submit(cpTenantDomain, cpRouterName, {map:true,lead:lead});
+		}
+	}
+	});
+	</script>
 <?php endif; 
 if ($my_current_lang == 'es'): ?>
-    ESTE ES UN TEXTO PARA NUESTRA VERSIÓN EN ESPAÑOL. :)
+    <script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
+	<script>
+	var cpTenantDomain = "serviapgroup";
+	var cpRouterName = "inbound_router";
+	var cpHubspotFormID = ["b684bcb7-2f56-49d1-9054-a6b5077d7672"];
+	var lead = {};
+	window.addEventListener("message", function (event) {
+	if (event.data.type === "hsFormCallback") {
+		if (event.data.eventName === "onFormSubmit") {
+			for (var key in event.data.data) {
+				if (Array.isArray(event.data.data[key].value)) {event.data.data[key].value = event.data.data[key].value.toString().replaceAll(",",";");}
+				lead[event.data.data[key].name] = event.data.data[key].value;
+			}
+			if(Object.keys(lead).length <= 1){lead = event.data.data;}
+		} else if (event.data.eventName === "onFormSubmitted") {
+			ChiliPiper.submit(cpTenantDomain, cpRouterName, {map:true,lead:lead});
+		}
+	}
+	});
+	</script>
 <?php endif; ?>
 
 </body>
