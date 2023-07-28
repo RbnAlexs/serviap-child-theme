@@ -26,6 +26,9 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 <?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
 if ($my_current_lang == 'en'): ?>
     THIS IS A TEXT STRING TO OUR ENGLISH VERSION. :)
+<?php endif; 
+if ($my_current_lang == 'es'): ?>
+    ESTE ES UN TEXTO PARA NUESTRA VERSIÓN EN ESPAÑOL. :)
 <?php endif; ?>
 
 </body>
