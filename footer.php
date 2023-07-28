@@ -26,7 +26,7 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 
 
 	<script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
-	<script>
+	<script  type="text/javascript">
 	var cpTenantDomain = "serviapgroup";
 	var cpRouterName = "inbound-router";
 <?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
