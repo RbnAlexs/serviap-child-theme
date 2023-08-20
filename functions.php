@@ -444,7 +444,7 @@ if ( ! function_exists( 'wpfactory_after_post_content' ) ) {
                 $contact_text = "Contact us";
             break;
             case 'es':
-                $contact_text = "Conáctanos";
+                $contact_text = "Contáctanos";
             break;
             case 'pt-br':
                 $contact_text = "Contate-nos";
