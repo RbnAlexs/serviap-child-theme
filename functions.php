@@ -434,7 +434,7 @@ if ( ! function_exists( 'wpfactory_after_post_content' ) ) {
      */
     //$my_current_lang = apply_filters( 'wpml_current_language', NULL );
 	//if ($my_current_lang == 'en'){
-        $contact_text = 'Contact us'
+        $contact_text = 'Contact us';
     //}
     function wpfactory_after_post_content( $content ) {
         if ( is_single() ) {
