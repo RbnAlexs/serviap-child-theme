@@ -434,7 +434,7 @@ if ( ! function_exists( 'wpfactory_after_post_content' ) ) {
      */
     function wpfactory_after_post_content( $content ) {
         if ( is_single() ) {
-            $content .= '<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> <script> hbspt.forms.create({ region: "na1", portalId: "5265231", formId: "68ba3466-4abb-49d4-9700-e63e64f1ce12" }); </script>';
+            $content .= '<h2 class="wp-block-heading">Contact us</h2><br/>><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> <script> hbspt.forms.create({ region: "na1", portalId: "5265231", formId: "68ba3466-4abb-49d4-9700-e63e64f1ce12" }); </script>';
         }
         return $content;
     }
