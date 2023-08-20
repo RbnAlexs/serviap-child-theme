@@ -432,10 +432,10 @@ if ( ! function_exists( 'wpfactory_after_post_content' ) ) {
     /**
      * Add custom text after WordPress posts.
      */
-    $my_current_lang = apply_filters( 'wpml_current_language', NULL );
-	if ($my_current_lang == 'en'){
+    //$my_current_lang = apply_filters( 'wpml_current_language', NULL );
+	//if ($my_current_lang == 'en'){
         $contact_text = 'Contact us'
-    }
+    //}
     function wpfactory_after_post_content( $content ) {
         if ( is_single() ) {
             $content .= '<h2 class="wp-block-heading">'.$contact_text.'</h2><br/><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> <script> hbspt.forms.create({ region: "na1", portalId: "5265231", formId: "68ba3466-4abb-49d4-9700-e63e64f1ce12" }); </script>';
