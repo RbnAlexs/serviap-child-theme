@@ -424,4 +424,21 @@ function dashboard_style() {
 }
 add_action('admin_enqueue_scripts', 'dashboard_style');
 
+
+/** Add contact form each data post*/
+
+
+if ( ! function_exists( 'wpfactory_after_post_content' ) ) {
+    /**
+     * Add custom text after WordPress posts.
+     */
+    function wpfactory_after_post_content( $content ) {
+        if ( is_single() ) {
+            $content .= '<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script> <script> hbspt.forms.create({ region: "na1", portalId: "5265231", formId: "68ba3466-4abb-49d4-9700-e63e64f1ce12" }); </script>';
+        }
+        return $content;
+    }
+}
+add_filter( 'the_content', 'wpfactory_after_post_content' );
+
 ?>

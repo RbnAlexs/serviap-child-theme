@@ -29,19 +29,19 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 	<script async type="text/javascript">
 	var cpTenantDomain = "serviapgroup";
 	var cpRouterName = "inbound-router";
-<?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
-if ($my_current_lang == 'en'): ?>
-	var cpHubspotFormID = ["68ba3466-4abb-49d4-9700-e63e64f1ce12"];
-<?php endif; 
-if ($my_current_lang == 'es'): ?>
-	var cpHubspotFormID = ["b684bcb7-2f56-49d1-9054-a6b5077d7672"];
-<?php endif; 
-if ($my_current_lang == 'pt-br'): ?>
-	var cpHubspotFormID = ["b9402139-cd18-483b-aea1-32095d00476f"];
-<?php endif; 
-if ($my_current_lang == 'de'): ?>
-	var cpHubspotFormID = ["40eb4e14-8676-43b8-acf1-6e4dc22db2d1"];
-<?php endif; ?>
+	<?php $my_current_lang = apply_filters( 'wpml_current_language', NULL );
+	if ($my_current_lang == 'en'): ?>
+		var cpHubspotFormID = ["68ba3466-4abb-49d4-9700-e63e64f1ce12"];
+	<?php endif; 
+	if ($my_current_lang == 'es'): ?>
+		var cpHubspotFormID = ["b684bcb7-2f56-49d1-9054-a6b5077d7672"];
+	<?php endif; 
+	if ($my_current_lang == 'pt-br'): ?>
+		var cpHubspotFormID = ["b9402139-cd18-483b-aea1-32095d00476f"];
+	<?php endif; 
+	if ($my_current_lang == 'de'): ?>
+		var cpHubspotFormID = ["40eb4e14-8676-43b8-acf1-6e4dc22db2d1"];
+	<?php endif; ?>
 	var lead = {};
 	window.addEventListener("message", function (event) {
 	if (event.data.type === "hsFormCallback") {
