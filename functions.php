@@ -269,8 +269,7 @@ function serviap_child_enqueue_styles() {
 	wp_enqueue_style( 'flags', get_stylesheet_directory_uri().'/css/flag-icons.min.css');
     wp_enqueue_style( 'serviap-child-style',
         get_stylesheet_directory_uri().'/css/style.min.css',
-        array( $parent_style ),
-        wp_get_theme()->get('Version')
+        array( $parent_style )
     );
 }
 add_action( 'wp_enqueue_scripts', 'serviap_child_enqueue_styles' );
