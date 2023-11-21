@@ -24,9 +24,6 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
 		<span><i class="fa fa-angle-up"></i></span>
 </a>
-
-
-
 	<script src="https://js.chilipiper.com/marketing.js" type="text/javascript"></script>
 	<script async type="text/javascript">
 	var cpTenantDomain = "serviapgroup";
@@ -59,7 +56,12 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 	}
 	});
 	</script>
-
-
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WR49ZN5');</script>
+	<!-- End Google Tag Manager -->
 </body>
 </html>
